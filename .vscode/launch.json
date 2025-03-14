@@ -1,0 +1,76 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": false
+        }
+      ],
+      "windows": {
+        "miDebuggerPath": "C:/raylib/w64devkit/bin/gdb.exe"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build debug"
+    },
+    {
+      "name": "Run",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+        "miDebuggerPath": "C:/raylib/w64devkit/bin/gdb.exe"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build release"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/aman7/Downloads/Raylib-CPP-Starter-Template-for-VSCODE-V2-main/Raylib-CPP-Starter-Template-for-VSCODE-V2-main",
+      "program": "c:/Users/aman7/Downloads/Raylib-CPP-Starter-Template-for-VSCODE-V2-main/Raylib-CPP-Starter-Template-for-VSCODE-V2-main/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
